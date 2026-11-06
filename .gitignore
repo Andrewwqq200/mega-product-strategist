@@ -1,0 +1,17 @@
+# Секреты
+.env
+.env.local
+*.key
+*.pem
+
+# Виртуальное окружение
+venv/
+__pycache__/
+*.pyc
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Cursor
+.cursor/cache/
