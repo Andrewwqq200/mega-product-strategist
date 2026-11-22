@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${workspaceFolder}/materials",
+        "${workspaceFolder}"
+      ]
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    },
+    "pdf": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-pdf-server",
+        "--working-directory",
+        "${workspaceFolder}"
+      ]
+    },
+    "excel": {
+      "command": "uvx",
+      "args": ["excel-mcp-server", "stdio"]
+    }
+  }
+}
